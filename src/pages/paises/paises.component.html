@@ -1,0 +1,14 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Paises</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <button ion-item *ngFor="let lista of listas" (click)="listaSeleccionada(lista)">
+{{ lista.titulo}}
+  </button>
+    </ion-list>
+
+</ion-content>
